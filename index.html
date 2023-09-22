@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(to right, #333333, #494949);
+        color: #FFF;
+        font-family: 'Rajdhani', sans-serif;
+        font-family: 'Roboto Slab', serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 1%;
+    }
+    h2{
+        text-align: center;
+    }
+
+    fieldset {
+        margin-inline: 24%;
+        margin-top: 1%;
+        border-radius: 5px;
+    }
+
+    form {
+        width: 65%;
+        margin: 0 auto;
+        padding-top: 2%;
+    }
+
+    input {
+        display: block;
+        color: #FFF;
+        margin: 25px 0 20px;
+        width: 95%;
+        padding: 10px;
+        border: #FFF 1px solid;
+        border-radius: 5px;
+        background: transparent;
+    }
+
+    input[type=submit] {
+        background-color: black;
+        color: aliceblue;
+        border: black 1.5px solid;
+        border-radius: 5px;
+        transition: 0.1s;
+    }
+
+    textarea {
+        background: transparent;
+        color: #FFF;
+        max-width: 95%;
+        border: #FFF 1px solid;
+        border-radius: 5px;
+    }
+
+    input[type=submit]:hover {
+        border: #FFF 1.5px solid;
+        background-color: transparent;
+    }
+</style>
+
+<body>
+    <h1>Desenvolvedor Web</h1>
+    <h2>Richard</h2>
+    <fieldset>
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="accessKey" value="bbdf630e-16c9-4c73-abf9-c06deb197bb1">
+            <input type="hidden" name="redirectTo" value="https://bobrachador.github.io/thank.html">
+            <input type="text" name="name" placeholder="Nome"><br>
+            <input type="text" name="email" placeholder="E-mail"><br>
+            <label for="mensagem">Assunto</label><br>
+            <textarea name="message" id="mensagem" cols="50" rows="10"></textarea>
+            <input type="submit" id="enviar" value="Enviar">
+        </form>
+    </fieldset>
+    <script>
+
+    </script>
+</body>
+
+</html>
